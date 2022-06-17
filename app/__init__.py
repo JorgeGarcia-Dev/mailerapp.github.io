@@ -10,6 +10,7 @@ def create_app():
     # Creación de un objeto de Aplicación Flask.
     app = Flask(__name__)
     
+    # Cargando las variables de entorno en el diccionario app.config.
     app.config.from_mapping(
         FROM_EMAIL=os.environ.get('FROM_EMAIL'),
         SENDGRID_KEY=os.environ.get('SENDGRID_API_KEY'),
