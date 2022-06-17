@@ -1,3 +1,4 @@
+# Creación de una lista de instrucciones a ejecutar en la base de datos.
 instructions = [
     'DROP TABLE IF EXISTS email;',
     """
